@@ -1,3 +1,8 @@
-export default () => (
-  <div>Welcome to next.js!</div>
-)
+import Head from '../ui/head.js'
+
+export default () => 
+  <div>
+    <Head />
+
+    
+  </div>
