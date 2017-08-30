@@ -8,14 +8,13 @@ export default _ =>
       margin: 0;
       padding: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #6C7A89
-      color: #CEFFFF;
+      background: #32383C
+      color: #eeeeee;
       font-size: 16px;
     }
     h1,
     h2,
     h3 {
-      font-weight: 700;
       margin: 0;
       font-family: ;
     }

@@ -9,5 +9,6 @@ export default () =>
     <GlobalStyles />
     <Content>
       <Header />
+      <hr />
     </Content>
   </div>
