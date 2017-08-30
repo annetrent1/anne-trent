@@ -1,7 +1,9 @@
+import Head from 'next/head'
+
 const now = _ => new Date().getFullYear()
 
 export default _ => 
-<head>
+<Head>
   <title>Anne Trent | The Real Anne Trent</title>
 
   <link rel="shortcut icon" type="image/png" href="/static/img/favicon.png" />
@@ -35,4 +37,6 @@ export default _ =>
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+{/* <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i" rel="stylesheet"/> */}
+</Head>
