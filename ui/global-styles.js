@@ -1,3 +1,5 @@
+import media from './media'
+
 export default _ =>
   <style global jsx>{`
     * {
@@ -8,7 +10,7 @@ export default _ =>
       margin: 0;
       padding: 0;
       font-family: 'Open Sans', sans-serif;
-      background: #eeeeee;
+      background: #fff;
       color: #32383C;
       font-size: 16px;
     }
@@ -37,12 +39,12 @@ export default _ =>
       line-height: 30px;
     }
     
-    @media screen and (min-width: 426px) {
+    @media screen and (${media.small}) {
     }
-    @media screen and (min-width: 769px) {
+    @media screen and (${media.medium}) {
      
     }
-    @media screen and (min-width: 1441px) {
+    @media screen and (${media.large}) {
      
     }
   `}</style>

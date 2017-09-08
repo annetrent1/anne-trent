@@ -14,8 +14,7 @@ export default _ =>
         fill: #61dafb;
         width: 100%;
         height: 100%;
-        margin: auto;
-        
+        margin: auto;        
       }
       
     `}</style>

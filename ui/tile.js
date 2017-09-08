@@ -1,17 +1,33 @@
 import React from 'react'
+import media from './media'
 
 const renderPic = props =>
-  props.picture
+  React.isValidElement(props.picture)
   ? <div className="picture">
-    {props.picture}
+      {props.picture}
     <style jsx>{`
       .picture {
-        height: 100%;
+        height: auto;
+        width: 100%;
         margin: auto;
       }
     `}</style>
   </div>
-  : null
+  : <div className="picture-container">
+    <img src={props.picture} className="picture"/>
+    <style jsx>{`
+      .picture {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+      }
+      .picture-container {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+      }
+    `}</style>
+  </div>
 
 export default class extends React.Component {
   constructor(props) {
@@ -27,35 +43,36 @@ export default class extends React.Component {
         <div className="picture-container"> 
           {renderPic(this.props)}
         </div>
-        <h2 className="heading">{this.props.heading}</h2>
+        <div className="heading-container"><h2 className="heading">{this.props.heading}</h2></div>
         <p className="p-body">{this.props.children}</p>
         <style jsx>{` 
           .p-body {
             display: none;
           }
           .tile {
-            border: solid 2px red;
+            border: solid 2px #45BF98;
             margin: 2em;
             position: relative;
             height: 100%;
-            
+            display: flex;
+            border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
+            box-shadow: 3px 3px 3px grey;
           }
           .picture-container {
             height: 100%;
-            position: absolute;
-            margin: auto;
-            text-align: center;
-         
-            
-          
+            margin-bottom: -5px;
+            text-align: center;   
+            max-width: 200px;     
+          }
+          .heading-container {
+            font-size: 1.3em;    
           }
           .heading {
-            font-size: 2em;    
-            opacity: .99;
-            z-index: 40;
-            margin: auto;
-            text-align: center;  
-            padding: 2.5em 0;     
+            
+            height: 100%;
+            width: 100%;
+          }
+          @media screen and (${media.small}) {
           }
         `}</style>
       </div> 
