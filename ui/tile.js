@@ -50,13 +50,14 @@ export default class extends React.Component {
             display: none;
           }
           .tile {
-            border: solid 2px #45BF98;
-            margin: 2em;
+            border: solid 3px #45BF98;
             position: relative;
             height: 100%;
             display: flex;
             border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
             box-shadow: 3px 3px 3px grey;
+            max-width: 500px;
+            margin: 1.5em;
           }
           .picture-container {
             height: 100%;
@@ -65,12 +66,16 @@ export default class extends React.Component {
             max-width: 200px;     
           }
           .heading-container {
-            font-size: 1.3em;    
+            font-size: 1.5em; 
+            margin: auto 0;   
           }
           .heading {
-            
-            height: 100%;
-            width: 100%;
+            margin-right: 10px;
+          }
+          .tile:hover {
+            position: relative;
+            top: -1px;
+            box-shadow: 5px 5px 3px grey;
           }
           @media screen and (${media.small}) {
           }

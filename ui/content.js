@@ -3,8 +3,10 @@ export default props =>
   {props.children}
   <style jsx>{`
     .content {
-      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
-
+    
   `}</style>
 </div>
