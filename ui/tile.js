@@ -1,5 +1,7 @@
-import React from 'react'
+import LoneTile from './lone-tile'
 import media from './media'
+import React from 'react'
+
 
 const renderPic = props =>
   React.isValidElement(props.picture)
@@ -39,48 +41,65 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <div className="tile">
-        <div className="picture-container"> 
+      <div className={`tile ${this.state.isExpanded ? 'tile--isExpanded': ''}`} onClick={this._handleClick.bind(this)}>
+        <div className={`picture-container ${this.state.isExpanded ? 'picture-container--isExpanded': ''}`}> 
           {renderPic(this.props)}
         </div>
-        <div className="heading-container"><h2 className="heading">{this.props.heading}</h2></div>
-        <p className="p-body">{this.props.children}</p>
+        <div className={`heading-container ${this.state.isExpanded ? 'heading-containter--isExpanded': ''}`}><h2 className={`heading ${this.state.isExpanded ? 'heading--isExpanded': ''}`}>{this.props.heading}</h2></div>
+        <p className={`p-body ${this.state.isExpanded ? 'p-body--isExpanded': ''}`}>{this.props.children}</p>
         <style jsx>{` 
-          .p-body {
-            display: none;
-          }
-          .tile {
-            border: solid 3px #45BF98;
-            position: relative;
-            height: 100%;
-            display: flex;
-            border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
-            box-shadow: 3px 3px 3px grey;
-            max-width: 500px;
-            margin: 1.5em;
-          }
-          .picture-container {
-            height: 100%;
-            margin-bottom: -5px;
-            text-align: center;   
-            max-width: 200px;     
-          }
-          .heading-container {
-            font-size: 1.5em; 
-            margin: auto 0;   
-          }
-          .heading {
-            margin-right: 10px;
-          }
-          .tile:hover {
-            position: relative;
-            top: -1px;
-            box-shadow: 5px 5px 3px grey;
-          }
-          @media screen and (${media.small}) {
-          }
-        `}</style>
+            .p-body {
+              display: none;
+            }
+            .p-body--isExpanded {
+              display: block;
+            }
+            .tile {
+              border: solid 3px #45BF98;
+              position: relative;
+              height: 100%;
+              display: flex;
+              border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
+              box-shadow: 3px 3px 3px grey;
+              max-width: 500px;
+              margin: 2em;
+            }
+            .tile:hover {
+              position: relative;
+              top: -1px;
+              box-shadow: 5px 5px 3px grey;
+            }
+            .tile--isExpanded {
+              background: red;
+              z-index: 40;
+              position: fixed;
+
+            }
+            .tile--isExpanded[disabled]:hover {
+            }
+            .picture-container {
+              height: 100%;
+              margin-bottom: -5px;
+              text-align: center;   
+              max-width: 200px;     
+            }
+            .heading-container {
+              font-size: 1.5em; 
+              margin: auto 0;   
+            }
+            .heading {
+              margin-right: 10px;
+            }
+          
+          `}</style>
+        
       </div> 
-    )
+    )}
+    _handleClick(event) {
+      this.setState({
+        isExpanded: !this.state.isExpanded
+      
+      })
+      console.log(event.currentTarget)
+    }
   }
-}
