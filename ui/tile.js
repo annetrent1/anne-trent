@@ -40,18 +40,20 @@ export default class extends React.Component {
   }
   render() {
     return (
-      <div className={`tile ${this.state.isExpanded ? 'tile--isExpanded': ''}`} onClick={this._handleClick.bind(this)}>
-        <div className={`picture-container ${this.state.isExpanded ? 'picture-container--isExpanded': ''}`}> 
+      <div className={`${this.state.isExpanded ? 'tile--isExpanded': 'tile'}`} onClick={this._handleClick.bind(this)}>
+        <div className={`${this.state.isExpanded ? 'picture-container--isExpanded': 'picture-container'}`}> 
           {renderPic(this.props)}
         </div>
-        <div className={`heading-container ${this.state.isExpanded ? 'heading-containter--isExpanded': ''}`}><h2 className={`heading ${this.state.isExpanded ? 'heading--isExpanded': ''}`}>{this.props.heading}</h2></div>
-        <p className={`p-body ${this.state.isExpanded ? 'p-body--isExpanded': ''}`}>{this.props.children}</p>
+        <div className={`${this.state.isExpanded ? 'heading-containter--isExpanded': 'heading-container'}`}><h2 className={`${this.state.isExpanded ? 'heading--isExpanded': 'heading'}`}>{this.props.heading}</h2></div>
+        <p className={`${this.state.isExpanded ? 'p-body--isExpanded': 'p-body'}`}>{this.props.children}</p>
         <style jsx>{` 
             .p-body {
               display: none;
             }
             .p-body--isExpanded {
               display: block;
+              width: 90%;
+              margin: auto;
             }
             .tile {
               border: solid 3px #45BF98;
@@ -69,18 +71,29 @@ export default class extends React.Component {
               box-shadow: 5px 5px 3px grey;
             }
             .tile--isExpanded {
-              background: red;
+              background: white;
               z-index: 40;
               position: fixed;
-
+              border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
+              box-shadow: 8px 8px 3px grey;
+              border: solid 3px #45BF98;
+              margin: 0 1em 0 .1em;
+              max-width: 1000px;
+              height: 80%;
             }
-            .tile--isExpanded[disabled]:hover {
+            .tile--isExpanded:hover {
+              box-shadow: 5px 5px 3px grey;
             }
             .picture-container {
               height: 100%;
               margin-bottom: -5px;
               text-align: center;   
               max-width: 200px;     
+            }
+            .picture-container--isExpanded {
+              margin-bottom: -5px;
+              text-align: center;   
+              max-width: 200px;  
             }
             .heading-container {
               font-size: 1.5em; 
@@ -89,7 +102,16 @@ export default class extends React.Component {
             .heading {
               margin-right: 10px;
             }
-          
+            .heading-container--isExpanded {
+              
+              position: relative;   
+            }
+            .heading--isExpanded {
+              width: 90%;
+              margin: auto;
+              font-size: 2em; 
+              position: relative;   
+            }
           `}</style>
         
       </div> 

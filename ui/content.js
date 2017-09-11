@@ -6,6 +6,7 @@ export default props =>
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      margin: auto;
     }
     
   `}</style>

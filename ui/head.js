@@ -37,6 +37,5 @@ export default _ =>
   <meta name="MobileOptimized" content="320" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-{/* <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,300i" rel="stylesheet"/> */}
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400|Raleway" rel="stylesheet" />
 </Head>

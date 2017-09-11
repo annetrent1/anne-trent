@@ -9,16 +9,17 @@ export default _ =>
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Raleway', sans-serif;
       background: #fff;
       color: #32383C;
       font-size: 16px;
     }
     h1,
     h2,
-    h3 {
+    h3, 
+    h4 {
       margin: 0;
-      font-family: ;
+      font-family: 'Poppins', sans-serif;
     }
     a {
       display: inline-block;
