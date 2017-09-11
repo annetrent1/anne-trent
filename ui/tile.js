@@ -1,4 +1,3 @@
-import LoneTile from './lone-tile'
 import media from './media'
 import React from 'react'
 
