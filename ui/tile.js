@@ -56,44 +56,45 @@ export default class extends React.Component {
               margin: auto;
             }
             .tile {
-              border: solid 3px #45BF98;
+              border: solid 3px hsla(45, 2%, 14%, 1);
               position: relative;
               height: 100%;
               display: flex;
               border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
-              box-shadow: 3px 3px 3px grey;
+              box-shadow: 3px 3px 3px hsla(45, 2%, 14%, .6);
               max-width: 500px;
               margin: 2em;
+              background: hsla(51, 72%, 85%, 1);
             }
             .tile:hover {
               position: relative;
               top: -1px;
-              box-shadow: 5px 5px 3px grey;
+              box-shadow: 5px 5px 3px hsla(45, 2%, 14%, .6);
             }
             .tile--isExpanded {
-              background: white;
+              background: hsla(51, 72%, 82%, 1);
               z-index: 40;
               position: fixed;
               border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
-              box-shadow: 8px 8px 3px grey;
-              border: solid 3px #45BF98;
+              box-shadow: 8px 8px 3px hsla(45, 2%, 14%, .6);
+              border: solid 3px hsla(45, 2%, 14%, 1);
               margin: 0 1em 0 .1em;
               max-width: 1000px;
               height: 80%;
             }
             .tile--isExpanded:hover {
-              box-shadow: 5px 5px 3px grey;
+              box-shadow: 5px 5px 3px hsla(45, 2%, 14%, .6);           
             }
             .picture-container {
               height: 100%;
               margin-bottom: -5px;
-              text-align: center;   
+              text-align: center;    
               max-width: 200px;     
             }
-            .picture-container--isExpanded {
-              margin-bottom: -5px;
-              text-align: center;   
+            .picture-container--isExpanded { 
               max-width: 200px;  
+              margin: 0;
+              
             }
             .heading-container {
               font-size: 1.5em; 
@@ -109,8 +110,95 @@ export default class extends React.Component {
             .heading--isExpanded {
               width: 90%;
               margin: auto;
-              font-size: 2em; 
-              position: relative;   
+              font-size: 2.5em;  
+            }
+            @media screen and (${media.small}) {
+              .p-body {
+              }
+              .p-body--isExpanded {
+                clear: left;
+              }
+              .tile {
+                
+              }
+              .tile:hover {
+              }
+              .tile--isExpanded {
+              }
+              .tile--isExpanded:hover {
+              }
+              .picture-container {
+              }
+              .picture-container--isExpanded {
+                float: left;
+              }
+              .heading-container { 
+              }
+              .heading {
+                font-size: 1.55em;
+              }
+              .heading-container--isExpanded {
+              }
+              .heading--isExpanded { 
+                font-size: 2.8em;
+                margin: 1.2em 0;
+              }
+            }
+            @media screen and (${media.medium}) {
+              .p-body {
+              }
+              .p-body--isExpanded {
+              }
+              .tile {
+              }
+              .tile:hover {
+              }
+              .tile--isExpanded {
+                
+              }
+              .tile--isExpanded:hover {
+              }
+              .picture-container {
+              }
+              .picture-container--isExpanded {
+              }
+              .heading-container { 
+              }
+              .heading {
+              }
+              .heading-container--isExpanded {
+              }
+              .heading--isExpanded { 
+                font-size: 3.5em;
+                margin: 1.2em 0; 
+              }
+            }
+            @media screen and (${media.large}) {
+              .p-body {
+              }
+              .p-body--isExpanded {
+              }
+              .tile {
+              }
+              .tile:hover {
+              }
+              .tile--isExpanded {
+                
+              }
+              .tile--isExpanded:hover {
+              }
+              .picture-container {
+              }
+              .picture-container--isExpanded {
+              }
+              .heading-container { 
+              }
+              .heading {
+              }
+              .heading-container--isExpanded {
+              }
+              .heading--isExpanded {  
+              }
             }
           `}</style>
         
@@ -121,6 +209,5 @@ export default class extends React.Component {
         isExpanded: !this.state.isExpanded
       
       })
-      console.log(event.currentTarget)
     }
   }

@@ -10,8 +10,8 @@ export default _ =>
       margin: 0;
       padding: 0;
       font-family: 'Raleway', sans-serif;
-      background: #fff;
-      color: #32383C;
+      background: hsla(52, 90%, 67%, 1);
+      color: hsla(45, 2%, 14%, 1);
       font-size: 16px;
     }
     h1,
@@ -23,7 +23,7 @@ export default _ =>
     }
     a {
       display: inline-block;
-      color: #fff;
+      color: black;
       text-decoration: none;
       border-bottom: 1px solid #61dafb;
       margin-bottom: 2px;
