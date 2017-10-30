@@ -60,11 +60,10 @@ export default class extends React.Component {
               position: relative;
               height: 100%;
               display: flex;
-              border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
               box-shadow: 3px 3px 3px hsla(45, 2%, 14%, .6);
               max-width: 500px;
               margin: 2em;
-              background: hsla(51, 72%, 85%, 1);
+              background: hsla(199, 0%, 92%, 1);
             }
             .tile:hover {
               position: relative;
@@ -72,13 +71,12 @@ export default class extends React.Component {
               box-shadow: 5px 5px 3px hsla(45, 2%, 14%, .6);
             }
             .tile--isExpanded {
-              background: hsla(51, 72%, 82%, 1);
+              background: hsla(199, 0%, 92%, 1);
               z-index: 40;
-              position: fixed;
-              border-radius: 25px 15px 25px 15px/15px 225px 15px 255px;
+              position: relative;
               box-shadow: 8px 8px 3px hsla(45, 2%, 14%, .6);
               border: solid 3px hsla(45, 2%, 14%, 1);
-              margin: 0 1em 0 .1em;
+              margin: 0 1em 0 1em;
               max-width: 1000px;
               height: 80%;
             }

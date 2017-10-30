@@ -10,7 +10,7 @@ export default _ =>
       margin: 0;
       padding: 0;
       font-family: 'Raleway', sans-serif;
-      background: hsla(52, 90%, 67%, 1);
+      background: hsla(199, 0%, 66%, 1);
       color: hsla(45, 2%, 14%, 1);
       font-size: 16px;
     }
