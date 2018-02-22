@@ -15,42 +15,21 @@ export default () =>
       <Hr />
       <Content>
         <Tile heading="Styling in React" picture={<ReactLogo/>} >
-          Sweet roll gingerbread jelly beans wafer jelly bonbon sweet macaroon halvah. 
-          Candy sweet apple pie apple pie cookie. Lemon drops fruitcake jelly-o apple pie candy
-          jelly-o candy danish cookie. Brownie soufflé pie sugar plum pastry. Jelly gummi bears 
-          wafer sugar plum brownie apple pie cotton candy. Chocolate bear claw apple pie. Muffin 
-          tart liquorice pie donut soufflé. Cookie brownie pie cotton candy cake carrot cake 
-          ßtiramisu sesame snaps. Tart cheesecake chupa chups.
-          Sweet roll gingerbread jelly beans wafer jelly bonbon sweet macaroon halvah. 
-          Candy sweet apple pie apple pie cookie. Lemon drops fruitcake jelly-o apple pie candy
-          jelly-o candy danish cookie. Brownie soufflé pie sugar plum pastry. Jelly gummi bears 
-          wafer sugar plum brownie apple pie cotton candy. Chocolate bear claw apple pie. Muffin 
-          tart liquorice pie donut soufflé. Cookie brownie pie cotton candy cake carrot cake 
-          ßtiramisu sesame snaps. Tart cheesecake chupa chups.
-          Sweet roll gingerbread jelly beans wafer jelly bonbon sweet macaroon halvah. 
-          Candy sweet apple pie apple pie cookie. Lemon drops fruitcake jelly-o apple pie candy
-          jelly-o candy danish cookie. Brownie soufflé pie sugar plum pastry. Jelly gummi bears 
-          wafer sugar plum brownie apple pie cotton candy. Chocolate bear claw apple pie. Muffin 
-          tart liquorice pie donut soufflé. Cookie brownie pie cotton candy cake carrot cake 
-          ßtiramisu sesame snaps. Tart cheesecake chupa chups.
+	  This is a wonderful marketing website for the Pluralsight course "Styling in React".
+	  I highly recommend this course as well as admiring the beautiful website!
+	  	  
         </Tile>
 
         <Tile heading="New in React" picture="../static/taco.png" >
-          Sweet roll gingerbread jelly beans wafer jelly bonbon sweet macaroon halvah. 
-          Candy sweet apple pie apple pie cookie. Lemon drops fruitcake jelly-o apple pie candy
-          jelly-o candy danish cookie. Brownie soufflé pie sugar plum pastry. Jelly gummi bears 
-          wafer sugar plum brownie apple pie cotton candy. Chocolate bear claw apple pie. Muffin 
-          tart liquorice pie donut soufflé. Cookie brownie pie cotton candy cake carrot cake 
-          ßtiramisu sesame snaps. Tart cheesecake chupa chups.
+	  This was a fun project we tried to roll out before the React 16 was released. Speed
+	  bumps were hit and it didn't get finished before it would have been useful. It's
+	  a slightly dead project.
         </Tile>
 
-        <Tile heading="New in React" picture="../static/taco.png" >
-          Sweet roll gingerbread jelly beans wafer jelly bonbon sweet macaroon halvah. 
-          Candy sweet apple pie apple pie cookie. Lemon drops fruitcake jelly-o apple pie candy
-          jelly-o candy danish cookie. Brownie soufflé pie sugar plum pastry. Jelly gummi bears 
-          wafer sugar plum brownie apple pie cotton candy. Chocolate bear claw apple pie. Muffin 
-          tart liquorice pie donut soufflé. Cookie brownie pie cotton candy cake carrot cake 
-          ßtiramisu sesame snaps. Tart cheesecake chupa chups.
+        <Tile heading="Self Learning Club" picture="../static/taco.png" >
+	  This was a super fun website to make! It isn't quite finished, but it is still useable.
+	  It is a great collection of resources for anyone on the spectrum of learning. Expect more
+	  to come here!
         </Tile>
     </Content>
   </div>
