@@ -1,0 +1,51 @@
+#myCanvas {
+    background-color: aliceblue;
+    margin: 0 auto;
+    border: 5px solid black;
+    display: block;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    text-align: center;
+    color: aliceblue;
+}
+
+h2 {
+    font-family: fantasy;
+    text-align: center;
+    color: aliceblue;
+}
+
+p, #points, #high {
+    font-family: fantasy;
+    text-align: center;
+    color: aliceblue;
+}
+
+body {
+    background-color: dimgray
+}
+
+#wrapper {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 42%;
+}
+
+#start {
+    margin-top:25px;
+    background-color: aliceblue;
+    color: dimgray;
+    padding: 7px 16px;
+    border: 2px solid black;
+}
+
+#instructions {
+    width: 750px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

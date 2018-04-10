@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MouthSmashGame</title>
+        <link rel="stylesheet" href="game.css">
+        <script src="game.js"></script>
+    </head>
+
+    <body>
+        <h1>Mouth Smash</h1>
+        <h2>Game Instructions</h2>
+        <div id="instructions">
+                <p>The objective of the game is to use the red circle to pop all of the bubbles.</p>
+                <p>Popping smaller bubbles makes the red circle increase in size and earn you points.</p>
+                <p>Beware popping a bubble that is larger than the red circle will cause you to decrease in size and lose points</p>
+        </div>
+        <div id="pointsContainer">
+          <p id="points">Points: </p>
+        </div>
+        <div id="canvas">
+            <canvas id="myCanvas" width="1200" height="600"></canvas>
+        </div>
+        <div id="wrapper">
+            <button id="start" onclick="start()" type="button">Start</button>
+        </div>
+
+    </body>
+</html>
